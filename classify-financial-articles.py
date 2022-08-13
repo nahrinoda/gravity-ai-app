@@ -19,3 +19,5 @@ def process(inPath, outPath):
     # save result to csv
     output_df = input_df[['id', 'category']]
     output_df.to_csv(outPath, index=False)
+
+grav.wait_for_requests(process)
